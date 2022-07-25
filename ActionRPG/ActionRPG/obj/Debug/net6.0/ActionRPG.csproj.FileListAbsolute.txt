@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\bin\Debug\net6.0\ActionRPG.exe
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\bin\Debug\net6.0\ActionRPG.deps.json
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\bin\Debug\net6.0\ActionRPG.runtimeconfig.json
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\bin\Debug\net6.0\ActionRPG.dll
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\bin\Debug\net6.0\ActionRPG.pdb
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.AssemblyInfo.cs
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.dll
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\refint\ActionRPG.dll
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.pdb
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ActionRPG.genruntimeconfig.cache
+C:\Users\User\Desktop\ActionRPG_Console\ActionRPG\ActionRPG\obj\Debug\net6.0\ref\ActionRPG.dll
