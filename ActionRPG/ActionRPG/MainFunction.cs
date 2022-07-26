@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace ActionRPG
 {
-    internal class MainFunction
+    public class MainFunction
     {
         static void Main()
         {
-            GameManager gameManager = new GameManager();
-            gameManager.Awake();
-            gameManager.Start();
-            gameManager.Update();
+            GameManager.Instance.Awake();
+            GameManager.Instance.Start();
+            GameManager.Instance.Update();
         }
     }
 }
