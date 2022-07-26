@@ -70,13 +70,22 @@ namespace ActionRPG
                     item.CheckItemCollision(); // 아이템 충돌 체크
                     player.LevelUP(); // 레벨 업
                     render.RenderInfo(); // 정보 그리기
-                    render.RenderScreen(); // 화면 그리기 
+                    render.RenderScreen(); // 화면 그리기
                     CheckStageUP(); // 다 죽였는지 체크
                     if(isClear)
                     {
                         Thread.Sleep(1000);
                         Console.Clear();
                         StageUP();// 다음 스테이지 변수값 변경 함수 호출
+                    }
+                    if(GameManager.Instance.GetPlayer.IsDead)
+                    {
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        Console.WriteLine();
+                        Console.WriteLine("\t ======= Game Over =======");
+                        Console.WriteLine();
+                        return;
                     }
                 }
                 if(currentTimer - inputTimer > 1000 / 10) // 키 입력 타이머

@@ -90,6 +90,7 @@ namespace ActionRPG
             }
             if (hp <= 0)
             {
+                hp = 0;
                 isDead = true;
             }
         }
