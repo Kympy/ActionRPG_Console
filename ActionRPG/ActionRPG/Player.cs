@@ -100,7 +100,7 @@ namespace ActionRPG
         }
         public void LevelUP() // 레벨 업
         {
-            if(exp >= maxExp)
+            if(exp >= maxExp) // 레벨 업 시 모든 스텟 1.5배
             {
                 maxHp = maxHp * 1.5f;
                 hp = maxHp;
@@ -114,7 +114,7 @@ namespace ActionRPG
                 myColor = ConsoleColor.White; // 내 색상
             }
         }
-        public void SwitchDirection(PlayerState state) // 이동에 따른 방향 저장
+        public void SwitchDirection(PlayerState state) // 이동에 따른 방향 저장 및 캐릭터 모양 변경
         {
             direction = state;
             switch(direction)
@@ -127,7 +127,7 @@ namespace ActionRPG
                     {
                         myShape = '▲';
                         yPos -= 1;
-                        if(yPos < 0) yPos = 0;
+                        if(yPos < 0) yPos = 0; // 맵 외부로 벗어나지 못하도록 제한
                         break;
                     }
                 case PlayerState.down:
@@ -156,7 +156,7 @@ namespace ActionRPG
         public async void AttackStart() // 마지막 이동 위치(바라보는 방향) 에 따른 공격 시작
         {
             isAttack = true;
-            switch (direction)
+            switch (direction) // 마지막 이동 방향에 따라 칼을 휘두르는 모션의 출발점이 바뀜
             {
                 default:
                     {
@@ -268,12 +268,6 @@ namespace ActionRPG
             {
                 for (int i = 0; i < GameManager.Instance.MaxMonsterCount; i++)
                 {
-                    /*
-                    if (rangePositionX == GameManager.Instance.GetMonsterList[i].Position_X && rangePositionY == GameManager.Instance.GetMonsterList[i].Position_Y)
-                    {
-                        GameManager.Instance.GetMonsterList[i].DecreaseHP(power); // 해당 몬스터의 체력을 내 공격력만큼 감소시킴
-                    }
-                    */
                     if(MathF.Abs(xPos - GameManager.Instance.GetMonsterList[i].Position_X) <= range 
                         && MathF.Abs(yPos - GameManager.Instance.GetMonsterList[i].Position_Y) <= range) // 공격범위 내에 있다면
                     {
@@ -282,12 +276,6 @@ namespace ActionRPG
                 }
                 for(int i = 0; i < GameManager.Instance.MaxBossCount; i++) // 보스
                 {
-                    /*
-                    if(rangePositionX == GameManager.Instance.GetBossList[i].Position_X && rangePositionY == GameManager.Instance.GetBossList[i].Position_Y)
-                    {
-                        GameManager.Instance.GetBossList[i].DecreaseHP(power);
-                    }
-                    */
                     if (MathF.Abs(xPos - GameManager.Instance.GetBossList[i].Position_X) <= range
                          && MathF.Abs(yPos - GameManager.Instance.GetBossList[i].Position_Y) <= range)
                     {

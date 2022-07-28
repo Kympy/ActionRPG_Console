@@ -47,16 +47,16 @@ namespace ActionRPG
             render.InitRender();
             player.InitPlayer();
             item.InitItem();
-            stage = 1;
-            currentMonsterCount = 20;
-            maxMonsterCount = currentMonsterCount;
-            currentBossCount = 1;
-            maxBossCount = currentBossCount;
+            stage = 1; // 현재 스테이지
+            currentMonsterCount = 20; // 현재 몬스터 수
+            maxMonsterCount = currentMonsterCount; // 최대 몬스터 수
+            currentBossCount = 1; // 현재 보스 수
+            maxBossCount = currentBossCount; // 최대 보스 수
         }
         public void Start()
         {
-            Console.CursorVisible = false;
-            CreateMonster();
+            Console.CursorVisible = false; // 커서 숨김
+            CreateMonster(); // 몬스터 생성
         }
         public void Update()
         {

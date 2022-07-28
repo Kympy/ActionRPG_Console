@@ -8,10 +8,6 @@ namespace ActionRPG
 {
     public class Monster : Actor
     {
-        //private char attackShape = '●';
-        //public char AttackShape { get { return attackShape; } }
-        //private ConsoleColor attackColor = ConsoleColor.Red;
-        //public ConsoleColor AttackColor { get { return attackColor; } }
         public virtual void InitInfo()
         {
             hp = GameManager.Instance.Stage;
